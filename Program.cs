@@ -11,9 +11,8 @@ namespace PhoneStore_EF
         static void Main(string[] args)
         {
             Service dbService = new Service();
-            var phone = dbService.GetPhoneWithMaxPrice();
-
-            Console.WriteLine(phone.Name);
+            var phone = dbService.GetPhoneWithMinPrice();
+            Console.WriteLine("The most expensive phone: {0}", phone.Name);
             Console.ReadLine();
         }
     }

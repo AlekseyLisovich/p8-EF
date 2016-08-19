@@ -15,10 +15,10 @@ namespace PhoneStore_EF
             return db.Phones.ToList();
         }
 
-        public Phone GetPhoneWithMaxPrice()
+        public Phone GetPhoneWithMinPrice()
         {
             return db.Phones
-                .OrderByDescending(p => p.Price)
+                .OrderBy(p => p.Price)
                 .First();
         }
     }
