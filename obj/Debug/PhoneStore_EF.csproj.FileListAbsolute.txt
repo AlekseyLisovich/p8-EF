@@ -1,0 +1,10 @@
+D:\work\net_lab\p8-EF\PhoneStore_EF\bin\Debug\PhoneStore_EF.exe.config
+D:\work\net_lab\p8-EF\PhoneStore_EF\bin\Debug\PhoneStore_EF.exe
+D:\work\net_lab\p8-EF\PhoneStore_EF\bin\Debug\PhoneStore_EF.pdb
+D:\work\net_lab\p8-EF\PhoneStore_EF\bin\Debug\EntityFramework.dll
+D:\work\net_lab\p8-EF\PhoneStore_EF\bin\Debug\EntityFramework.SqlServer.dll
+D:\work\net_lab\p8-EF\PhoneStore_EF\bin\Debug\EntityFramework.xml
+D:\work\net_lab\p8-EF\PhoneStore_EF\bin\Debug\EntityFramework.SqlServer.xml
+D:\work\net_lab\p8-EF\PhoneStore_EF\obj\Debug\PhoneStore_EF.csprojResolveAssemblyReference.cache
+D:\work\net_lab\p8-EF\PhoneStore_EF\obj\Debug\PhoneStore_EF.exe
+D:\work\net_lab\p8-EF\PhoneStore_EF\obj\Debug\PhoneStore_EF.pdb
