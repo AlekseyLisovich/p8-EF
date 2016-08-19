@@ -13,9 +13,9 @@ namespace PhoneStore_EF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbEntities : DbContext
+    public partial class PhoneStoreContext : DbContext
     {
-        public dbEntities()
+        public PhoneStoreContext()
             : base("name=dbEntities")
         {
         }

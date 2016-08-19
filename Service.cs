@@ -8,14 +8,14 @@ namespace PhoneStore_EF
 {
     class Service
     {
-        private dbEntities db = new dbEntities();
+        private PhoneStoreContext db = new PhoneStoreContext();
 
         public ICollection<Phone> GetPhones()
         {
             return db.Phones.ToList();
         }
 
-        public Phone GetProductsWithMinPrice()
+        public Phone GetPhoneWithMaxPrice()
         {
             return db.Phones
                 .OrderByDescending(p => p.Price)
