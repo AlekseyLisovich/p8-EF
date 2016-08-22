@@ -31,13 +31,13 @@ namespace PhoneStore_EF
                 .OrderBy(p => p.Name).ToList();
         }
 
-        public async Task newPhonesPrice(double newPrice)
+        public async Task newPhonesPrice(double coefficient)
         {
             foreach (var phone in db.Phones)
             {
                 if (phone.Price < 500)
                 {
-                    phone.Price *= newPrice;
+                    phone.Price *= coefficient;
                 }
             }
 
