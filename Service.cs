@@ -21,5 +21,33 @@ namespace PhoneStore_EF
                 .OrderBy(p => p.Price)
                 .First();
         }
+
+        public ICollection<Phone> GetPhoneBoughtInLastYears()
+        {
+            return db.Phones
+                .Where(p => p.OrderHistories
+                    .Where(o => o.Date.Year == 2015 || o.Date.Year == 2016)
+                    .Count() != 0)
+                .OrderBy(p => p.Name).ToList();
+        }
+
+        public async Task newPhonesPrice(double newPrice)
+        {
+            foreach (var phone in db.Phones)
+            {
+                if (phone.Price < 500)
+                {
+                    phone.Price *= newPrice;
+                }
+            }
+
+            await db.SaveChangesAsync();
+        }
+
+        public async Task DeletePhones()
+        {
+            db.Phones.RemoveRange(db.Phones.Where(p => p.Price < 600));
+            await db.SaveChangesAsync();
+        }
     }
 }
